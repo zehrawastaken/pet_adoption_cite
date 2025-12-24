@@ -1,0 +1,485 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  background: #fffdf5;
+  color: #5c4033;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1;
+}
+
+/* HEADER */
+
+/* NAVBAR */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background: #f4ead5;
+  border-bottom: 1px solid #e0d1b0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+/* LOGO */
+
+.logo-group {
+  display: flex;
+  align-items:center;
+
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.logo-image {
+  height: 90px; 
+  width: auto;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2c1b16;
+}
+
+/* NAV LINKS */
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.main-nav a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #6b4b3a;
+}
+
+.main-nav a:hover {
+  color: #3f291e;
+}
+
+.main-nav a.active {
+  color: #7bb661;
+  border-bottom: 2px solid #7bb661;
+  padding-bottom: 2px;
+}
+
+.mobile-menu-button {
+  display: none;
+}
+
+.main {
+  flex: 1;
+  padding-bottom: 40px;
+}
+
+/* HERO */
+
+.donate-hero {
+  padding: 40px 0 24px;
+}
+
+.donate-hero-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.donate-hero-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(92, 64, 51, 0.25);
+}
+
+.donate-hero-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.donate-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(92, 64, 51, 0.25),
+    rgba(92, 64, 51, 0.7)
+  );
+}
+
+.donate-hero-text {
+  position: absolute;
+  inset: 0;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.donate-hero-text h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 8px;
+  letter-spacing: -0.03em;
+}
+
+.donate-hero-text h2 {
+  max-width: 560px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* DONATION LAYOUT */
+
+.donate-main {
+  padding: 32px 0 40px;
+}
+
+.donate-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 32px;
+}
+
+/* FORM */
+
+.donate-form-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.donate-form-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.donate-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.donate-form-card {
+  background: #f4ead5;
+  border-radius: 16px;
+  padding: 24px 20px;
+  box-shadow: 0 4px 12px rgba(92, 64, 51, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* BUTTONS */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #7bb661;
+  color: #fff;
+  border-color: #7bb661;
+  box-shadow: 0 4px 10px rgba(123, 182, 97, 0.4);
+}
+
+.btn-primary:hover {
+  background: #6aa052;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.btn-icon {
+  font-size: 18px;
+  margin-left: 4px;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* MONEY */
+
+.amount-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.amount-option {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(92, 64, 51, 0.2);
+  font-size: 14px;
+  font-weight: 600;
+  color: #5c4033;
+  cursor: pointer;
+}
+
+.amount-option input {
+  margin-right: 2px;
+}
+
+.amount-option:hover {
+  background: #7bb661;
+  border-color: #6aa052;
+  color: #fff;
+}
+
+/* FORM INPUT */
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-field label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-field input {
+  border-radius: 12px;
+  border: 1px solid rgba(92, 64, 51, 0.2);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #5c4033;
+  font-family: inherit;
+}
+
+.form-field input::placeholder {
+  color: rgba(92, 64, 51, 0.5);
+}
+
+.form-field input:focus {
+  outline: 2px solid rgba(123, 182, 97, 0.8);
+  outline-offset: 1px;
+}
+
+/* CREDIT CARD INFO */
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* SECURITY NOTE */
+
+.secure-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 12px;
+  color: rgba(92, 64, 51, 0.6);
+}
+
+.lock-icon {
+  font-size: 16px;
+}
+
+/* IMPACT */
+
+.donate-impact-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.impact-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.impact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.impact-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  background: rgba(244, 234, 213, 0.9);
+  border-radius: 12px;
+}
+
+.impact-icon-circle {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #7bb661;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.impact-icon-circle .material-symbols-outlined {
+  font-size: 26px;
+}
+
+.impact-text h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.impact-text p {
+  font-size: 14px;
+  color: rgba(92, 64, 51, 0.85);
+}
+
+/* FOOTER */
+
+.site-footer {
+  background: #f4ead5;
+  border-top: 1px solid #e0d1b0;
+  padding: 24px 0 18px;
+  margin-top: 20px;
+}
+
+.footer-inner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-logo-text {
+  font-weight: bold;
+}
+
+.footer-links {
+  display: flex;
+  gap: 14px;
+  font-size: 13px;
+}
+
+.footer-links a:hover {
+  color: #7bb661;
+}
+
+.footer-bottom {
+  font-size: 12px;
+  color: #6b4b3a;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: inline-flex;
+  }
+
+  .donate-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .donate-hero-text {
+    padding: 16px;
+  }
+
+  .donate-hero-text h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 600px) {
+  .donate-hero-text h1 {
+    font-size: 22px;
+  }
+
+  .donate-hero-text h2 {
+    font-size: 13px;
+  }
+}

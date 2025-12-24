@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pati - Find Your Forever Friend</title>
+
+  <!-- Google Fonts (FONTS) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Open+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Material Symbols (ICONS) -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/index.css" />
+</head>
+
+<body>
+  <!-- HEADER / NAVBAR -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo-group">
+        <a href="index.html" class="logo-link">
+          <img src="assets/img/logo.png" alt="Blissful Paws" class="logo-image" />
+        </a>
+      </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="adopt.html">Adopt</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- HERO CAROUSEL -->
+    <section class="hero-carousel">
+      <div class="hero-carousel-inner">
+        <button class="carousel-arrow prev" type="button" aria-label="Previous image">
+          <span class="material-symbols-outlined">chevron_left</span>
+        </button>
+
+        <div class="carousel-images">
+          <img src="assets/img/animal1.jpg" alt="Happy adopted dog looking at the camera"
+            class="carousel-image active" />
+          <img src="assets/img/animal17.jpg" alt="Cat relaxing in a cozy home" class="carousel-image" />
+          <img src="assets/img/animal3.jpg" alt="Volunteer cuddling a rescue dog" class="carousel-image" />
+        </div>
+
+        <button class="carousel-arrow next" type="button" aria-label="Next image">
+          <span class="material-symbols-outlined">chevron_right</span>
+        </button>
+      </div>
+    </section>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Find Your Forever Friend.</h1>
+          <p>
+            Discover the joy of pet adoption and help us give every animal a loving home.
+            Your new best friend is waiting for you at Pati.
+          </p>
+          <div class="hero-buttons">
+            <a href="adopt.html" class="btn btn-primary">How to Adopt</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FEATURED PETS -->
+  <section class="section featured-pets">
+    <div class="container">
+      <h2 class="section-title">Pets Waiting for a Home</h2>
+
+      <div class="pet-grid">
+        <!-- PET CARD 1 -->
+        <article class="pet-card">
+          <div class="pet-image-wrapper">
+            <img src="assets/img/animal1.jpg" alt="Kömür - a playful and loving companion" class="pet-image" />
+          </div>
+          <div class="pet-content">
+            <h3 class="pet-name">Kömür</h3>
+            <p class="pet-info">
+              2 years old – A playful and loving companion
+            </p>
+            <a href="pet.html?id=komur" class="btn btn-secondary btn-full">
+              Adopt Kömür
+            </a>
+          </div>
+        </article>
+
+        <!-- PET CARD 2 -->
+        <article class="pet-card">
+          <div class="pet-image-wrapper">
+            <img src="assets/img/animal2.jpg" alt="Boncuk - an energetic and loyal friend" class="pet-image" />
+          </div>
+          <div class="pet-content">
+            <h3 class="pet-name">Boncuk</h3>
+            <p class="pet-info">
+              10 months old – An energetic and loyal friend
+            </p>
+            <a href="pet.html?id=boncuk" class="btn btn-secondary btn-full">
+              Adopt Boncuk
+            </a>
+          </div>
+        </article>
+
+        <!-- PET CARD 3 -->
+        <article class="pet-card">
+          <div class="pet-image-wrapper">
+            <img src="assets/img/animal3.jpg" alt="Milo - a calm and affectionate cat" class="pet-image" />
+          </div>
+          <div class="pet-content">
+            <h3 class="pet-name">Milo</h3>
+            <p class="pet-info">
+              4 years old – A calm and affectionate cat
+            </p>
+            <a href="pet.html?id=milo" class="btn btn-secondary btn-full">
+              Adopt Milo
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <div class="featured-cta">
+        <a href="adopt.html" class="btn btn-primary">
+          View All Adoptable Pets
+        </a>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo-icon small">
+          <span class="material-symbols-outlined">pets</span>
+        </div>
+        <span class="footer-logo-text">Pati</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="adopt.html">Adopt</a>
+        <a href="donate.html">Donate</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <p class="footer-bottom">
+        © 2024 Pati. All rights reserved. Connecting pets with loving homes.
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

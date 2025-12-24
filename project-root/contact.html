@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Pati</title>
+
+  <!-- Google Fonts (FONTS) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Material Symbols (ICONS) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="assets/css/contact.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <!-- HEADER / NAVBAR -->
+    <header class="site-header">
+  <div class="container header-inner">
+    <div class="logo-group">
+      <a href="index.html" class="logo-link">
+        <img src="assets/img/logo.png" alt="Blissful Paws" class="logo-image" />
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="adopt.html">Adopt</a></li>
+        <li><a href="about.html" >About Us</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <!-- MAIN -->
+  <main class="main">
+    <section class="contact-section">
+      <div class="container contact-layout">
+        <!-- LEFT FORM -->
+        <div class="contact-card">
+          <h1>Contact Us</h1>
+          <p class="contact-subtitle">
+            Have a question about adoption, volunteering or donations? Send us a message and we’ll get back to you as soon as we can.
+          </p>
+
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="John Doe"
+                />
+              </div>
+              <div class="form-field">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="john.doe@example.com"
+                />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="topic">Topic</label>
+              <select id="topic" name="topic">
+                <option value="general">General Question</option>
+                <option value="adoption">Adoption</option>
+                <option value="donation">Donation</option>
+                <option value="volunteer">Volunteering</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Write your message here..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- RIGHT INFO -->
+        <aside class="contact-sidebar">
+          <div class="info-card">
+            <h2>Get in touch</h2>
+
+            <div class="info-item">
+              <span class="material-symbols-outlined info-icon"> mail </span>
+              <div>
+                <h3>Email</h3>
+                <p>info@BlissfulPaws.org</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="material-symbols-outlined info-icon"> call </span>
+              <div>
+                <h3>Phone</h3>
+                <p>+90 (212) 533 65 32</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="material-symbols-outlined info-icon"> location_on </span>
+              <div>
+                <h3>Address</h3>
+                <p>Cibali Mah. Kadir Has Cad. 34083 Fatih, İstanbul</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-image-wrapper">
+            <img
+              src="assets/img/contactbackground.jpg"
+              alt="A person gently petting a dog"
+              class="contact-image"
+            />
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo-icon small">
+          <span class="material-symbols-outlined">pets</span>
+        </div>
+        <span class="footer-logo-text">Blissful Paws</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="adopt.html">Adopt</a>
+        <a href="donate.html">Donate</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <p class="footer-bottom">
+       ©2025 Blissful Paws All rights reserved. Connecting pets with loving homes.
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

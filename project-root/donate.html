@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pati - Donate</title>
+
+  <!-- Google Fonts (FONTS) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&family=Open+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Material Symbols (ICONS) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="assets/css/donate.css" />
+</head>
+<body>
+  <div class="page">
+    <!-- HEADER -->
+    <header class="site-header">
+  <div class="container header-inner">
+    <div class="logo-group">
+      <a href="index.html" class="logo-link">
+        <img src="assets/img/logo.png" alt="Blissful Paws" class="logo-image" />
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="adopt.html">Adopt</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="donate.html" class="active">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- HERO -->
+      <section class="donate-hero">
+        <div class="container">
+          <div class="donate-hero-inner">
+            <div class="donate-hero-image-wrapper">
+              <img
+                src="assets/img/background2.jpg"
+                alt="A heartwarming close-up photo of a happy golden retriever puppy."
+                class="donate-hero-image"
+              />
+              <div class="donate-hero-overlay"></div>
+              <div class="donate-hero-text">
+                <h1>Give Paws a Chance</h1>
+                <h2>
+                  Your gift provides food, shelter, and medical care to animals in need.
+                  Every little bit helps us save more lives.
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DONATION FORM + IMPACT -->
+      <section class="donate-main" id="donate-form">
+        <div class="container donate-layout">
+          <!-- LEFT: FORM -->
+          <div class="donate-form-column">
+            <div class="donate-form-heading">
+              <p class="donate-title">Make a Donation</p>
+            </div>
+
+            <div class="donate-form-card">
+
+              <!-- Amount -->
+              <div class="form-group">
+                <span class="form-label">Donation Amount</span>
+                <div class="amount-grid">
+                  <label class="amount-option">
+                    <input type="radio" name="donation-amount" value="10" />
+                    <span>₺10</span>
+                  </label>
+                  <label class="amount-option">
+                    <input
+                      type="radio"
+                      name="donation-amount"
+                      value="25"
+                      checked
+                    />
+                    <span>₺25</span>
+                  </label>
+                  <label class="amount-option">
+                    <input type="radio" name="donation-amount" value="50" />
+                    <span>₺50</span>
+                  </label>
+                  <label class="amount-option">
+                    <input type="radio" name="donation-amount" value="custom" />
+                    <span>Custom</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-field" id="custom-amount-wrapper" style="display: none;">
+                <label for="custom-amount">Custom Amount (₺)</label>
+                <input
+                  type="number"
+                  id="custom-amount"
+                  name="custom-amount"
+                  placeholder="Enter amount"
+                  min="1"
+                />
+              </div>
+
+              <!-- Name -->
+              <div class="form-field">
+                <label for="donor-name">Full Name</label>
+                <input
+                  type="text"
+                  id="donor-name"
+                  name="donor-name"
+                  placeholder="John Doe"
+                />
+              </div>
+
+              <!-- Email -->
+              <div class="form-field">
+                <label for="donor-email">Email Address</label>
+                <input
+                  type="email"
+                  id="donor-email"
+                  name="donor-email"
+                  placeholder="john.doe@example.com"
+                />
+              </div>
+
+              <!-- Card info -->
+              <div class="form-field">
+                <label for="card-number">Card Information</label>
+                <input
+                  type="text"
+                  id="card-number"
+                  name="card-number"
+                  placeholder="Card Number"
+                />
+              </div>
+
+              <div class="form-row">
+                <div class="form-field">
+                  <input type="text" placeholder="MM / YY" />
+                </div>
+                <div class="form-field">
+                  <input type="text" placeholder="CVC" />
+                </div>
+              </div>
+
+              <!-- Submit -->
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>Donate Now</span>
+                <span class="material-symbols-outlined btn-icon">favorite</span>
+              </button>
+
+              <p class="secure-note">
+                <span class="material-symbols-outlined lock-icon">lock</span>
+                Secure Payment (demo form)
+              </p>
+            </div>
+          </div>
+
+          <!-- RIGHT: IMPACT -->
+          <div class="donate-impact-column">
+            <h3 class="impact-title">How Your Gift Helps</h3>
+
+            <div class="impact-list">
+              <!-- Card 1 -->
+              <article class="impact-card">
+                <div class="impact-icon-circle">
+                  <span class="material-symbols-outlined">local_hospital</span>
+                </div>
+                <div class="impact-text">
+                  <h4>Medical Care</h4>
+                  <p>
+                    Your donation funds vaccinations, spaying/neutering, and
+                    life-saving emergency surgeries for animals in critical condition.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Card 2 -->
+              <article class="impact-card">
+                <div class="impact-icon-circle">
+                  <span class="material-symbols-outlined">restaurant</span>
+                </div>
+                <div class="impact-text">
+                  <h4>Food &amp; Shelter</h4>
+                  <p>
+                    Help us provide warm beds, safe shelter, and nutritious meals
+                    to keep our furry friends healthy and happy while they wait
+                    for their forever homes.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Card 3 -->
+              <article class="impact-card">
+                <div class="impact-icon-circle">
+                  <span class="material-symbols-outlined">volunteer_activism</span>
+                </div>
+                <div class="impact-text">
+                  <h4>Adoption Programs</h4>
+                  <p>
+                    Support our efforts to find loving families through adoption
+                    events, community outreach, and our foster care network.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo-icon small">
+          <span class="material-symbols-outlined">pets</span>
+        </div>
+        <span class="footer-logo-text">Blissful Paws</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="adopt.html">Adopt</a>
+        <a href="donate.html">Donate</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <p class="footer-bottom">
+       ©2025 Blissful Paws All rights reserved. Connecting pets with loving homes.
+      </p>
+    </div>
+  </footer>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
